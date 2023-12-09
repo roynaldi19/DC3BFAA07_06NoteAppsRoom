@@ -1,4 +1,4 @@
-package com.roynaldi19.bfaa07_06noteapps
+package com.roynaldi19.dc3_07noteappsroom
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
