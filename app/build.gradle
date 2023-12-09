@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.roynaldi19.dc3_07noteappsroom"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -50,8 +50,8 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.google.android.material:material:1.5.0'
 
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.6'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.6'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
 
     implementation 'androidx.room:room-runtime:2.5.2'
     kapt 'androidx.room:room-compiler:2.5.2'
