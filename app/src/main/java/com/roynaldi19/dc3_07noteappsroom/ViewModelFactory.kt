@@ -23,13 +23,13 @@ class ViewModelFactory private constructor(private val application: Application)
         }
     }
 
-//    @Suppress("UNCHECKED_CAST")
-//    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-//        if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
-//            return MainViewModel(application) as T
-//        } else if (modelClass.isAssignableFrom(NoteAddUpdateViewModel::class.java)) {
-//            return NoteAddUpdateViewModel(application) as T
-//        }
-//        throw IllegalArgumentException("Unknown ViewModel class: ${modelClass.name}")
-//    }
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
+            return MainViewModel(application) as T
+        } else if (modelClass.isAssignableFrom(NoteAddUpdateViewModel::class.java)) {
+            return NoteAddUpdateViewModel(application) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class: ${modelClass.name}")
+    }
 }
